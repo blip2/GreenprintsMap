@@ -1,0 +1,62 @@
+{
+    "corsDomains" : [
+        "data.gov.au",
+        "ga.gov.au",
+        "corsproxy.com",
+        "programs.communications.gov.au",
+        "www.asris.csiro.au",
+        "localhost"
+    ],
+    "homeCamera": {
+        "north": -8,
+        "east": 158,
+        "south": -45,
+        "west": 109
+    },
+    "baseMapName": "Positron (Light)",
+    "initialViewerMode": "2d",
+    "services": [],
+    "catalog": [
+        {
+            "name": "3rd Party Datasets",
+            "type": "group",
+            "items": [
+                {
+                    "name": "Land Use Map",
+                    "type": "esri-mapServer",
+                    "url": "https://www.asris.csiro.au/arcgis/rest/services/abares/clum_50m_current/MapServer/0",
+                    "isShown": false,
+                    "isEnabled": true,
+                    "isLegendVisible": false
+                }
+            ]
+        },
+        {
+            "name": "Greenprints Layers",
+            "type": "group",
+            "items": [
+                {
+                    "name": "Sub-Bioregions",
+                    "type": "wms",
+                    "url": "http://localhost:8080/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities",
+                    "layers": "greenprints:ibra7_subregions",
+                    "opacity": 0.3,
+                    "isShown": true,
+                    "isEnabled": true,
+                    "isLegendVisible": false
+                },
+                {
+                    "name": "Bioregions",
+                    "type": "wms",
+                    "url": "http://localhost:8080/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities",
+                    "layers": "greenprints:IBRA7_regions_states",
+                    "opacity": 0.3,
+                    "isShown": true,
+                    "isEnabled": true,
+                    "isLegendVisible": false
+                }
+            ]
+        }
+    ],
+    "viewerMode": "2d"
+}
