@@ -56,6 +56,8 @@
 
         cesiumIonAccessToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5Yjc0M2U2ZC02YWE0LTQxODgtYTJlZi1jMTcxZWU2OTAzMTMiLCJpZCI6MjA3NjYsInNjb3BlcyI6WyJhc2wiLCJhc3IiLCJnYyJdLCJpYXQiOjE1NzgzMDM3MDV9._nzUgZJHy6FLVLNyLNpeh3HM7suI7UYbczPsgjbl_o4",
 
+        bingMapsKey: "An-LmMzhgCW4ztNMhkzAU2DmbNtGc2WAuaf5nxo0fniblUeAAnsIGDUkIj69aZcL",
+
         // Default mobile viewer mode when loading the map for the first time on mobile platforms.
         // Options are: "3DTerrain", "3DSmooth", "2D"
         mobileDefaultViewerMode: "2d",

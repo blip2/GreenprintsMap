@@ -4,7 +4,7 @@
         "ga.gov.au",
         "corsproxy.com",
         "programs.communications.gov.au",
-        "www.asris.csiro.au",
+        "greenprints.blip2.net"
     ],
     "homeCamera": {
         "north": -8,
@@ -111,7 +111,7 @@
                 {
                     "name": "Sub-Bioregions",
                     "type": "wms",
-                    "url": "https://pawpaw.blip2.net/deegree-webservices-3.4.11/services/wms?service=WMS&request=GetCapabilities",
+                    "url": "https://greenprints.blip2.net/deegree-webservices-3.4.11/services/wms?service=WMS&request=GetCapabilities",
                     "layers": "regions",
                     "opacity": 0.6,
                     "isShown": false,
@@ -124,7 +124,7 @@
                 {
                     "name": "Bioregions",
                     "type": "wms",
-                    "url": "https://pawpaw.blip2.net/deegree-webservices-3.4.11/services/wms?service=WMS&request=GetCapabilities",
+                    "url": "https://greenprints.blip2.net/deegree-webservices-3.4.11/services/wms?service=WMS&request=GetCapabilities",
                     "layers": "subregions",
                     "opacity": 0.6,
                     "isShown": true,
