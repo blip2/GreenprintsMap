@@ -3,8 +3,15 @@
         "data.gov.au",
         "ga.gov.au",
         "corsproxy.com",
+        "cartodb-basemaps-a.global.ssl.fastly.net",
+        "cartodb-basemaps-b.global.ssl.fastly.net",
+        "cartodb-basemaps-c.global.ssl.fastly.net",
         "programs.communications.gov.au",
-        "greenprints.blip2.net"
+        "greenprints.blip2.net",
+        "gisservices.information.qld.gov.au",
+        "www.environment.gov.au",
+        "www.asris.csiro.au",
+        "services2.arcgis.com"
     ],
     "homeCamera": {
         "north": -8,
@@ -48,7 +55,7 @@
             "name": "National Datasets",
             "type": "group",
             "items": [
-                /*{
+                {
                     "name": "Indigenous Land Use Agreements",
                     "type": "esri-mapServer",
                     "url": "https://services2.arcgis.com/rzk7fNEt0xoEp3cX/ArcGIS/rest/services/NNTT_Custodial_AGOL/FeatureServer/4",
@@ -63,7 +70,7 @@
                     "isShown": false,
                     "isEnabled": true,
                     "isLegendVisible": false,
-                },*/            
+                },
                 {
                     "name": "Watercourses and Dams",
                     "type": "esri-mapServer",
@@ -75,7 +82,7 @@
                 {
                     "name": "Historic Native Vegetation (pre-1750)",
                     "type": "wms",
-                    "url": "http://www.environment.gov.au/mapping/services/ogc_services/NVIS_pre_mvg/MapServer/WMSServer",
+                    "url": "https://www.environment.gov.au/mapping/services/ogc_services/NVIS_pre_mvg/MapServer/WMSServer",
                     "layers": "NVIS_PRE_MVG",
                     "isShown": false,
                     "isEnabled": true,
@@ -84,7 +91,7 @@
                 {
                     "name": "Present Native Vegetation",
                     "type": "wms",
-                    "url": "http://www.environment.gov.au/mapping/services/ogc_services/NVIS_ext_mvg/MapServer/WMSServer",
+                    "url": "https://www.environment.gov.au/mapping/services/ogc_services/NVIS_ext_mvg/MapServer/WMSServer",
                     "layers": "NVIS_EXT_MVG",
                     "isShown": false,
                     "isEnabled": true,
@@ -118,7 +125,7 @@
                     "isEnabled": true,
                     "isLegendVisible": false,
                     "featureInfoTemplate" : {
-                        "template": "Sub Region Name: {{SUB_NAME_7}}"
+                        "template": "Sub Region Name: {{SUB_NAME_7}} <iframe src='https://www.greenprints.org.au/wp-json/wp/v2/posts?categories=39&slug={{SUB_NAME_7}}'></iframe>"
                     }
                 },
                 {
