@@ -56,22 +56,6 @@
             "type": "group",
             "items": [
                 {
-                    "name": "Indigenous Land Use Agreements",
-                    "type": "esri-mapServer",
-                    "url": "https://services2.arcgis.com/rzk7fNEt0xoEp3cX/ArcGIS/rest/services/NNTT_Custodial_AGOL/FeatureServer/4",
-                    "isShown": false,
-                    "isEnabled": true,
-                    "isLegendVisible": false,
-                },  
-                {
-                    "name": "Native Title Determinations",
-                    "type": "esri-mapServer",
-                    "url": "https://services2.arcgis.com/rzk7fNEt0xoEp3cX/ArcGIS/rest/services/NNTT_Custodial_AGOL/FeatureServer/6",
-                    "isShown": false,
-                    "isEnabled": true,
-                    "isLegendVisible": false,
-                },
-                {
                     "name": "Watercourses and Dams",
                     "type": "esri-mapServer",
                     "url": "http://services.ga.gov.au/gis/rest/services/NM_Hydrology_and_Marine_Lines/MapServer",
@@ -116,30 +100,30 @@
             "type": "group",
             "items": [
                 {
+                    "type": "mvt",
                     "name": "Sub-Bioregions",
-                    "type": "wms",
-                    "url": "https://greenprints.blip2.net/deegree-webservices-3.4.11/services/wms?service=WMS&request=GetCapabilities",
-                    "layers": "regions",
-                    "opacity": 0.6,
-                    "isShown": false,
-                    "isEnabled": true,
-                    "isLegendVisible": false,
-                    "featureInfoTemplate" : {
-                        "template": "Sub Region Name: {{SUB_NAME_7}} <iframe src='https://www.greenprints.org.au/wp-json/wp/v2/posts?categories=39&slug={{SUB_NAME_7}}'></iframe>"
-                    }
-                },
-                {
-                    "name": "Bioregions",
-                    "type": "wms",
-                    "url": "https://greenprints.blip2.net/deegree-webservices-3.4.11/services/wms?service=WMS&request=GetCapabilities",
-                    "layers": "subregions",
-                    "opacity": 0.6,
+                    "url": "https://greenprints.blip2.net/services/subregions/tiles/{z}/{x}/{y}.pbf",
+                    "serverMinZoom": 0,
+                    "serverMaxZoom": 10,
+                    "layer": "ibra7_subregions",
+                    "rectangle": [72.577376,-54.776993,167.99814,-9.14129],
+                    "description": "IBRA7 Sub-Bioregions",
                     "isShown": true,
                     "isEnabled": true,
-                    "isLegendVisible": false,
-                    "featureInfoTemplate" : {
-                        "template": "Region Name: {{REG_NAME_6}}"
-                    }
+                    "isLegendVisible": false
+                },
+                {
+                    "type": "mvt",
+                    "name": "Bioregions",
+                    "url": "https://greenprints.blip2.net/services/regions/tiles/{z}/{x}/{y}.pbf",
+                    "serverMinZoom": 0,
+                    "serverMaxZoom": 10,
+                    "layer": "ibra7_regions",
+                    "rectangle": [72.577376,-54.776993,167.99814,-9.14129],
+                    "description": "IBRA7 Bioregions",
+                    "isShown": true,
+                    "isEnabled": true,
+                    "isLegendVisible": false
                 }
             ]
         }
