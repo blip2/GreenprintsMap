@@ -4,6 +4,7 @@ import {
   ExperimentalMenu
 } from "terriajs/lib/ReactViews/StandardUserInterface/customizable/Groups";
 import MeasureTool from "terriajs/lib/ReactViews/Map/Navigation/MeasureTool";
+import DrawTool from "terriajs/lib/ReactViews/Map/Navigation/DrawTool";
 import MenuItem from "terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuItem";
 import PropTypes from "prop-types";
 import React from "react";
@@ -39,6 +40,11 @@ export default function UserInterface(props) {
       <Nav>
         <MeasureTool terria={props.viewState.terria} key="measure-tool" />
       </Nav>
+      <If condition={props.viewState.drawToolsVisible}>
+        <Nav>
+          <DrawTool terria={props.viewState.terria} key="draw-tool" />
+        </Nav>
+      </If>
       <ExperimentalMenu>
         <If condition={isBrowserSupportedAV()}>
           <SplitPoint
