@@ -1047,9 +1047,9 @@ acorn-jsx@^5.0.0:
   integrity sha512-tMUqwBWfLFbJbizRmEcWSLw6HnFzfdJs2sOJEOwwtVPMoH/0Ay+E703oZz78VSXZiiDcZrQ5XKjPIUQixhmgVw==
 
 acorn@^6.0.7, acorn@^6.2.1:
-  version "6.4.0"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.4.0.tgz#b659d2ffbafa24baf5db1cdbb2c94a983ecd2784"
-  integrity sha512-gac8OEcQ2Li1dxIEWGZzsp2BitJxwkwcOm0zHAJLcPJaVvm58FRnk6RkuLRpU1EujipU2ZFODv2P9DLMfnV8mw==
+  version "6.4.1"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-6.4.1.tgz#531e58ba3f51b9dacb9a6646ca4debf5b14ca474"
+  integrity sha512-ZVA9k326Nwrj3Cj9jlh3wGFutC2ZornPNARZwsNYqQYgN0EsV2d53w5RN/co65Ohn4sUAUtb1rSUAOD6XN9idA==
 
 add-dom-event-listener@^1.1.0:
   version "1.1.0"
@@ -6194,6 +6194,10 @@ jsonfile@^4.0.0:
 
 jsonschema@terriajs/jsonschema:
   version "1.0.3"
+<<<<<<< HEAD
+=======
+  uid "55cedb27a265bbae2b366a3824863c586c5d34cf"
+>>>>>>> 9ce5ac472003e4b7c04f3d97c1f10aba2221fc36
   resolved "https://codeload.github.com/terriajs/jsonschema/tar.gz/55cedb27a265bbae2b366a3824863c586c5d34cf"
 
 jsprim@^1.2.2:
@@ -10561,6 +10565,89 @@ terriajs-server@^3.0.1:
     terriajs-ogr2ogr "^1.0.0"
     when "^3.7.7"
     yargs "^13.2.4"
+
+terriajs@7.10.1:
+  version "7.10.1"
+  resolved "https://registry.yarnpkg.com/terriajs/-/terriajs-7.10.1.tgz#d76f9b8cc01a132f46645ae7926285071b8e5924"
+  integrity sha512-UG2KgQo28beKoU4UpAcknedR6QC9HFEZVzyvuMF/wh/Uy3rxUG4HBdn+bn2IkWXHoISUYG+AhZuamh54LdMpNQ==
+  dependencies:
+    "@babel/core" "^7.3.3"
+    "@babel/plugin-transform-modules-commonjs" "^7.2.0"
+    "@babel/preset-env" "^7.3.1"
+    "@babel/preset-react" "^7.0.0"
+    "@mapbox/point-geometry" "^0.1.0"
+    "@mapbox/togeojson" "^0.16.0"
+    "@mapbox/vector-tile" "^1.3.0"
+    babel-loader "^8.0.5"
+    babel-plugin-jsx-control-statements "^4.0.0"
+    class-list "^0.1.1"
+    classnames "^2.2.3"
+    clipboard "^2.0.0"
+    create-react-class "^15.6.2"
+    css-loader "^2.1.0"
+    d3-array "^1.0.0"
+    d3-axis "^1.0.0"
+    d3-collection "^1.0.0"
+    d3-dispatch "^1.0.5"
+    d3-ease "^1.0.5"
+    d3-interpolate "^1.3.2"
+    d3-scale "^2.2.2"
+    d3-selection "^1.0.0"
+    d3-shape "^1.0.0"
+    d3-transition "^1.0.0"
+    d3-zoom "^1.8.3"
+    dateformat "^3.0.3"
+    dompurify "^2.0.7"
+    file-loader "^3.0.1"
+    file-saver "^1.3.8"
+    gulp "^4.0.0"
+    hammerjs "^2.0.6"
+    html-to-react "^1.3.4"
+    i18next "^19.0.0"
+    i18next-browser-languagedetector "^4.0.1"
+    imports-loader "^0.8.0"
+    inobounce "^0.1.2"
+    interactjs "1.4.0-alpha.17"
+    javascript-natural-sort "^0.7.1"
+    json5 "^2.1.0"
+    leaflet "1.3.1"
+    linkify-it "^2.0.0"
+    lodash.debounce "^4.0.6"
+    lodash.uniq "^4.5.0"
+    markdown-it "^8.0.0"
+    mini-css-extract-plugin "^0.5.0"
+    moment "^2.21.0"
+    mustache "^2.2.1"
+    mutationobserver-shim "^0.3.1"
+    pbf "^3.0.1"
+    pell "git://github.com/TerriaJS/pell.git#master"
+    point-in-polygon "^1.0.1"
+    proj4 "^2.4.4"
+    prop-types "^15.6.0"
+    raw-loader "^1.0.0"
+    rc-slider "^8.6.6"
+    react "^16.3.2"
+    react-addons-pure-render-mixin "^15.6.0"
+    react-anything-sortable "^1.5.2"
+    react-datepicker "0.53.0"
+    react-dom "^16.3.2"
+    react-i18next "^11.2.1"
+    react-responsive "^5.0.0"
+    react-swipeable "^5.1.0"
+    react-transition-group "^4.3.0"
+    resolve-url-loader "^3.0.1"
+    retry "^0.12.0"
+    sass-loader "^7.1.0"
+    simple-statistics "^7.0.1"
+    string-replace-webpack-plugin "^0.1.3"
+    style-loader "^0.23.1"
+    svg-sprite-loader "4.1.3"
+    terriajs-cesium "1.64.0"
+    terriajs-html2canvas "1.0.0-alpha.12-terriajs-1"
+    urijs "^1.18.12"
+    url-loader "^1.1.2"
+    webpack "^4.29.5"
+    worker-loader "^2.0.0"
 
 terser-webpack-plugin@^1.4.1:
   version "1.4.1"
